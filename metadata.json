@@ -1,0 +1,6 @@
+{
+  "name": "Desentupidora 24 Horas Contagem",
+  "description": "Landing page de alta conversão para Desentupidora em Contagem e região, otimizada para SEO local, agendamento de horário e contato via WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
