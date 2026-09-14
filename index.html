@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,7 +25,9 @@
     <meta name="twitter:title" content="Desentupidora em Contagem MG" />
     <meta name="twitter:description" content="Desentupimento em Contagem e região com facilidade de agendamento. Chame no WhatsApp agora!" />
 
-    <!-- Schema.org Structured Data (Plumber / LocalBusiness & FAQPage) -->
+    <link rel="stylesheet" href="/src/index.css" />
+
+    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -36,9 +38,10 @@
           "name": "Desentupidora Contagem",
           "description": "Desentupidora especializada em Contagem e região com atendimento ágil, técnicos qualificados e agendamento facilitado via WhatsApp.",
           "priceRange": "$$",
+          "telephone": "+55-31-98765-4321",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Av. João César de Oliveira, Eldorado",
+            "streetAddress": "Av. João César de Oliveira, 2800, Eldorado",
             "addressLocality": "Contagem",
             "addressRegion": "MG",
             "postalCode": "32310-000",
@@ -96,7 +99,1221 @@
     </script>
   </head>
   <body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-amber-500 selection:text-white">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- 1. CABEÇALHO / HEADER -->
+    <header class="sticky top-0 z-40 w-full">
+      <!-- Barra Superior Informativa -->
+      <div class="bg-slate-900 text-slate-200 text-xs py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+          <div class="flex items-center gap-2 font-medium">
+            <span class="inline-flex items-center px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-semibold text-[11px] border border-emerald-500/40">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5"></span>
+              ATENDIMENTO EM CONTAGEM
+            </span>
+            <span class="text-slate-300 text-xs">
+              Atendimento ágil no mesmo dia ou agendamento com hora marcada
+            </span>
+          </div>
+
+          <div class="flex items-center gap-3 text-xs">
+            <span class="hidden md:inline text-slate-300">
+              📅 Agende o dia e horário ideal
+            </span>
+            <a
+              href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Estou%20em%20Contagem%20e%20gostaria%20de%20solicitar%20atendimento%20ou%20agendar%20um%20hor%C3%A1rio."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-1.5 font-bold text-emerald-400 hover:text-emerald-300 transition-colors"
+            >
+              <span>💬 WhatsApp: (31) 98765-4321</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra de Navegação Principal -->
+      <nav class="w-full bg-slate-950/95 backdrop-blur-md border-b border-slate-800 py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+          <!-- Logo -->
+          <a href="#inicio" class="flex items-center gap-2.5">
+            <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-slate-950 font-black shadow-md text-xl">
+              💧
+            </div>
+            <div class="flex flex-col">
+              <span class="text-base sm:text-lg font-black tracking-tight text-white leading-tight">
+                DESENTUPIDORA <span class="text-amber-400">CONTAGEM</span>
+              </span>
+              <span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">
+                Desentupimento e Hidrojateamento
+              </span>
+            </div>
+          </a>
+
+          <!-- Links Desktop -->
+          <div class="hidden lg:flex items-center gap-6">
+            <a href="#servicos" class="text-sm font-medium text-slate-300 hover:text-white hover:underline underline-offset-8 decoration-amber-400 transition-colors">Serviços</a>
+            <a href="#como-funciona" class="text-sm font-medium text-slate-300 hover:text-white hover:underline underline-offset-8 decoration-amber-400 transition-colors">Como Funciona</a>
+            <a href="#cobertura" class="text-sm font-medium text-slate-300 hover:text-white hover:underline underline-offset-8 decoration-amber-400 transition-colors">Bairros Atendidos</a>
+            <a href="#faq" class="text-sm font-medium text-slate-300 hover:text-white hover:underline underline-offset-8 decoration-amber-400 transition-colors">Dúvidas Frequentes</a>
+          </div>
+
+          <!-- Botão WhatsApp Desktop -->
+          <div class="hidden sm:flex items-center gap-3">
+            <a
+              href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Estou%20em%20Contagem%20e%20gostaria%20de%20solicitar%20atendimento%20ou%20agendar%20um%20hor%C3%A1rio."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-md transition-all hover:scale-[1.02]"
+            >
+              <span>💬 Chamar no WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Botão Mobile Toggle -->
+          <div class="flex items-center sm:hidden gap-2">
+            <a
+              href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Estou%20em%20Contagem%20e%20gostaria%20de%20solicitar%20atendimento%20ou%20agendar%20um%20hor%C3%A1rio."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="p-2 rounded-lg bg-emerald-600 text-white"
+              aria-label="Abrir WhatsApp"
+            >
+              💬
+            </a>
+            <button
+              id="mobile-menu-btn"
+              type="button"
+              class="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800"
+              aria-label="Alternar Menu"
+            >
+              ☰
+            </button>
+          </div>
+        </div>
+
+        <!-- Menu Dropdown Mobile -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-800 bg-slate-950 px-4 pt-3 pb-5 space-y-3">
+          <div class="flex flex-col space-y-2">
+            <a href="#servicos" class="mobile-nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-white">Serviços</a>
+            <a href="#como-funciona" class="mobile-nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-white">Como Funciona</a>
+            <a href="#cobertura" class="mobile-nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-white">Bairros Atendidos</a>
+            <a href="#faq" class="mobile-nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-white">Dúvidas Frequentes</a>
+          </div>
+          <div class="pt-2 border-t border-slate-800">
+            <a
+              href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Estou%20em%20Contagem%20e%20gostaria%20de%20solicitar%20atendimento%20ou%20agendar%20um%20hor%C3%A1rio."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg text-sm font-bold text-white bg-emerald-600"
+            >
+              💬 Chamar no WhatsApp (Atendimento ou Agendamento)
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 2. SEÇÃO HERO / DESTAQUE -->
+      <section id="inicio" class="relative bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-white pt-8 pb-16 md:pt-12 md:pb-20 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Badges superiores -->
+          <div class="flex flex-wrap items-center gap-2 mb-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs sm:text-sm font-semibold">
+              <span class="flex h-2 w-2 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+              </span>
+              <span>Atendimento em Contagem e Região</span>
+            </div>
+
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs sm:text-sm font-medium border border-slate-700">
+              <span>📅 Opção de Agendamento de Horário</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <!-- Texto Principal -->
+            <div class="lg:col-span-8 space-y-6">
+              <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15]">
+                Desentupidora em <span class="text-amber-400">Contagem</span> e Região
+              </h1>
+
+              <p class="text-base sm:text-lg md:text-xl text-slate-300 font-normal leading-relaxed max-w-3xl">
+                Solução ágil e limpa para desentupimento de esgotos, ralos, pias, vasos sanitários e caixas de gordura <span class="text-amber-300 font-semibold underline decoration-amber-500/60 underline-offset-4">sem quebrar pisos ou paredes</span>. Solicite atendimento rápido ou <strong class="text-white">agende o melhor dia e horário</strong> diretamente pelo WhatsApp!
+              </p>
+
+              <!-- Botão Hero WhatsApp -->
+              <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
+                <a
+                  href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Estou%20em%20Contagem%20e%20gostaria%20de%20solicitar%20atendimento%20ou%20agendar%20um%20hor%C3%A1rio."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="hero-whatsapp-btn"
+                  class="group flex items-center justify-center sm:justify-start gap-3.5 px-6 py-4 rounded-xl text-base sm:text-lg font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-xl shadow-emerald-950/50 hover:shadow-emerald-900/60 transition-all duration-150"
+                >
+                  <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform flex-shrink-0 text-xl">
+                    💬
+                  </div>
+                  <div class="text-left">
+                    <span class="block text-xs uppercase tracking-wider text-emerald-100 font-medium">
+                      Atendimento Rápido ou Agendamento
+                    </span>
+                    <span class="block text-base sm:text-lg font-extrabold leading-tight">
+                      Chamar no WhatsApp
+                    </span>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Garantias Secundárias -->
+              <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs sm:text-sm text-slate-400 pt-1">
+                <span class="flex items-center gap-1.5">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  Residências, condomínios, empresas e indústrias
+                </span>
+                <span class="flex items-center gap-1.5">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  Pagamento facilitado no PIX ou cartão
+                </span>
+              </div>
+            </div>
+
+            <!-- Painel Lateral de Status -->
+            <div class="lg:col-span-4">
+              <div class="bg-slate-800/80 border border-slate-700/80 rounded-2xl p-5 sm:p-6 shadow-2xl backdrop-blur-sm">
+                <div class="flex items-center justify-between pb-4 border-b border-slate-700/70 mb-4">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-200">
+                      Central Contagem
+                    </span>
+                  </div>
+                  <span class="text-[11px] font-semibold text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/40">
+                    DISPONÍVEL
+                  </span>
+                </div>
+
+                <div class="space-y-3.5 text-sm">
+                  <div class="flex items-start gap-3">
+                    <span class="text-amber-400 text-base flex-shrink-0 mt-0.5">📍</span>
+                    <div>
+                      <span class="text-xs text-slate-400 block font-medium">Localização em Contagem:</span>
+                      <span class="text-slate-200 font-semibold block text-sm">
+                        Fácil acesso a todas as regiões da cidade
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-3">
+                    <span class="text-amber-400 text-base flex-shrink-0 mt-0.5">📅</span>
+                    <div>
+                      <span class="text-xs text-slate-400 block font-medium">Agendamento de Horário:</span>
+                      <span class="text-slate-200 font-semibold block text-sm">
+                        Turnos pela manhã ou tarde no seu endereço
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-3">
+                    <span class="text-amber-400 text-base flex-shrink-0 mt-0.5">🔧</span>
+                    <div>
+                      <span class="text-xs text-slate-400 block font-medium">Método de Trabalho:</span>
+                      <span class="text-slate-200 font-semibold block text-sm">
+                        Máquinas rotativas sem quebrar pisos
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-3">
+                    <span class="text-emerald-400 text-base flex-shrink-0 mt-0.5">🛡️</span>
+                    <div>
+                      <span class="text-xs text-slate-400 block font-medium">Atendimento Transparente:</span>
+                      <span class="text-slate-200 font-semibold block text-sm">
+                        Orçamento claro e prévio antes da execução
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-5 pt-4 border-t border-slate-700/70">
+                  <a
+                    href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Estou%20em%20Contagem%20e%20gostaria%20de%20solicitar%20atendimento%20ou%20agendar%20um%20hor%C3%A1rio."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-colors shadow-sm"
+                  >
+                    <span>💬 Solicitar ou Agendar no WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Destaques Rápidos -->
+          <div class="mt-12 pt-8 border-t border-slate-800/80 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+            <div class="flex items-center gap-3.5 p-3.5 rounded-xl bg-slate-800/40 border border-slate-800">
+              <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 flex-shrink-0 text-xl">
+                📅
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Agendamento Flexível</h4>
+                <p class="text-xs text-slate-400">Escolha o dia e horário ideal</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3.5 p-3.5 rounded-xl bg-slate-800/40 border border-slate-800">
+              <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 flex-shrink-0 text-xl">
+                📍
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Chegada Rápida</h4>
+                <p class="text-xs text-slate-400">Fácil acesso em Contagem</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3.5 p-3.5 rounded-xl bg-slate-800/40 border border-slate-800">
+              <div class="w-10 h-10 rounded-lg bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 flex-shrink-0 text-xl">
+                🔧
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Sem Quebra-Quebra</h4>
+                <p class="text-xs text-slate-400">Maquinário rotativo limpo</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3.5 p-3.5 rounded-xl bg-slate-800/40 border border-slate-800">
+              <div class="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 flex-shrink-0 text-xl">
+                🛡️
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Equipe Qualificada</h4>
+                <p class="text-xs text-slate-400">Profissionais experientes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. SERVIÇOS ESPECIALIZADOS (5 SERVIÇOS + CARD COM FOTO DO TÉCNICO) -->
+      <section id="servicos" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl mx-auto text-center space-y-3 mb-10 sm:mb-14">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs sm:text-sm font-semibold tracking-wide text-amber-800 bg-amber-50 border border-amber-200">
+              <span>🔧</span>
+              Serviços Especializados
+            </span>
+
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-slate-950 tracking-tight">
+              Desentupimento Profissional em Contagem
+            </h2>
+
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+              Desobstrução rápida, limpa e segura para residências, condomínios, comércios e indústrias, sem quebrar pisos.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- 1. Esgoto -->
+            <article class="rounded-2xl border border-slate-200 bg-white hover:border-slate-300 shadow-sm hover:shadow-md transition-all flex flex-col justify-between overflow-hidden">
+              <div class="p-6 space-y-4">
+                <div class="flex items-center justify-between gap-2">
+                  <div class="w-10 h-10 rounded-xl bg-red-50 text-red-600 flex items-center justify-center text-xl">
+                    ⚠️
+                  </div>
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold tracking-wide uppercase bg-slate-100 text-slate-700 border border-slate-200">
+                    Prioridade
+                  </span>
+                </div>
+
+                <div>
+                  <h3 class="text-lg font-bold text-slate-950 tracking-tight">Desentupimento de Esgoto</h3>
+                  <p class="text-xs text-slate-500 mt-1 font-medium">Desobstrução de ramais e redes de esgoto residenciais, comerciais e prediais.</p>
+                </div>
+
+                <div class="p-3 rounded-xl bg-red-50/70 border border-red-100 text-xs">
+                  <span class="font-bold text-red-800 block mb-0.5">Sintoma:</span>
+                  <p class="text-red-900 leading-relaxed">Mau cheiro e retorno de água suja por ralos ou ralos de quintal.</p>
+                </div>
+
+                <div class="p-3 rounded-xl bg-emerald-50/70 border border-emerald-100 text-xs">
+                  <span class="font-bold text-emerald-800 block mb-0.5">Nossa Solução:</span>
+                  <p class="text-slate-700 leading-relaxed">Desobstrução mecânica profunda com sondas rotativas que removem o bloqueio sem danificar a tubulação.</p>
+                </div>
+              </div>
+
+              <div class="px-6 py-3.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between gap-2">
+                <span class="text-[11px] font-semibold text-slate-500 flex items-center gap-1">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  Sem quebrar nada
+                </span>
+                <a
+                  href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Preciso%20de%20atendimento%20para%20desentupimento%20de%20ESGOTO%20em%20Contagem."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-sm transition-colors"
+                >
+                  💬 Chamar WhatsApp
+                </a>
+              </div>
+            </article>
+
+            <!-- 2. Pias e Ralos -->
+            <article class="rounded-2xl border border-slate-200 bg-white hover:border-slate-300 shadow-sm hover:shadow-md transition-all flex flex-col justify-between overflow-hidden">
+              <div class="p-6 space-y-4">
+                <div class="flex items-center justify-between gap-2">
+                  <div class="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center text-xl">
+                    💧
+                  </div>
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold tracking-wide uppercase bg-slate-100 text-slate-700 border border-slate-200">
+                    Mais Solicitado
+                  </span>
+                </div>
+
+                <div>
+                  <h3 class="text-lg font-bold text-slate-950 tracking-tight">Desentupimento de Pias e Ralos</h3>
+                  <p class="text-xs text-slate-500 mt-1 font-medium">Eliminação imediata de água parada na cozinha, banheiros e áreas de serviço.</p>
+                </div>
+
+                <div class="p-3 rounded-xl bg-red-50/70 border border-red-100 text-xs">
+                  <span class="font-bold text-red-800 block mb-0.5">Sintoma:</span>
+                  <p class="text-red-900 leading-relaxed">Água que não escoa na cuba da pia ou água acumulada no box durante o banho.</p>
+                </div>
+
+                <div class="p-3 rounded-xl bg-emerald-50/70 border border-emerald-100 text-xs">
+                  <span class="font-bold text-emerald-800 block mb-0.5">Nossa Solução:</span>
+                  <p class="text-slate-700 leading-relaxed">Raspagem interna cuidadosa de gordura e resíduos, restabelecendo o fluxo original com segurança.</p>
+                </div>
+              </div>
+
+              <div class="px-6 py-3.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between gap-2">
+                <span class="text-[11px] font-semibold text-slate-500 flex items-center gap-1">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  Sem quebrar nada
+                </span>
+                <a
+                  href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Estou%20com%20pia/ralo%20entupido%20em%20Contagem.%20Gostaria%20de%20verificar%20hor%C3%A1rios."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-sm transition-colors"
+                >
+                  💬 Chamar WhatsApp
+                </a>
+              </div>
+            </article>
+
+            <!-- 3. Vasos Sanitários -->
+            <article class="rounded-2xl border border-slate-200 bg-white hover:border-slate-300 shadow-sm hover:shadow-md transition-all flex flex-col justify-between overflow-hidden">
+              <div class="p-6 space-y-4">
+                <div class="flex items-center justify-between gap-2">
+                  <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl">
+                    🚽
+                  </div>
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold tracking-wide uppercase bg-slate-100 text-slate-700 border border-slate-200">
+                    Atendimento Ágil
+                  </span>
+                </div>
+
+                <div>
+                  <h3 class="text-lg font-bold text-slate-950 tracking-tight">Desentupimento de Vasos Sanitários</h3>
+                  <p class="text-xs text-slate-500 mt-1 font-medium">Desobstrução rápida de vasos sanitários com segurança para a louça.</p>
+                </div>
+
+                <div class="p-3 rounded-xl bg-red-50/70 border border-red-100 text-xs">
+                  <span class="font-bold text-red-800 block mb-0.5">Sintoma:</span>
+                  <p class="text-red-900 leading-relaxed">Nível da água subindo ao acionar a descarga, impedindo o uso do banheiro.</p>
+                </div>
+
+                <div class="p-3 rounded-xl bg-emerald-50/70 border border-emerald-100 text-xs">
+                  <span class="font-bold text-emerald-800 block mb-0.5">Nossa Solução:</span>
+                  <p class="text-slate-700 leading-relaxed">Desobstrução precisa da curva sifônica com ponteiras de proteção que não riscam nem quebram o sanitário.</p>
+                </div>
+              </div>
+
+              <div class="px-6 py-3.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between gap-2">
+                <span class="text-[11px] font-semibold text-slate-500 flex items-center gap-1">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  Sem quebrar nada
+                </span>
+                <a
+                  href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Estou%20com%20vaso%20sanit%C3%A1rio%20entupido%20em%20Contagem."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-sm transition-colors"
+                >
+                  💬 Chamar WhatsApp
+                </a>
+              </div>
+            </article>
+
+            <!-- 4. Caixa de Gordura -->
+            <article class="rounded-2xl border border-slate-200 bg-white hover:border-slate-300 shadow-sm hover:shadow-md transition-all flex flex-col justify-between overflow-hidden">
+              <div class="p-6 space-y-4">
+                <div class="flex items-center justify-between gap-2">
+                  <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl">
+                    🗑️
+                  </div>
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold tracking-wide uppercase bg-slate-100 text-slate-700 border border-slate-200">
+                    Residencial e Comercial
+                  </span>
+                </div>
+
+                <div>
+                  <h3 class="text-lg font-bold text-slate-950 tracking-tight">Limpeza de Caixa de Gordura</h3>
+                  <p class="text-xs text-slate-500 mt-1 font-medium">Higienização e desobstrução preventiva ou corretiva.</p>
+                </div>
+
+                <div class="p-3 rounded-xl bg-red-50/70 border border-red-100 text-xs">
+                  <span class="font-bold text-red-800 block mb-0.5">Sintoma:</span>
+                  <p class="text-red-900 leading-relaxed">Transbordamento da tampa da caixa de gordura e odores desagradáveis no ambiente.</p>
+                </div>
+
+                <div class="p-3 rounded-xl bg-emerald-50/70 border border-emerald-100 text-xs">
+                  <span class="font-bold text-emerald-800 block mb-0.5">Nossa Solução:</span>
+                  <p class="text-slate-700 leading-relaxed">Remoção de placas endurecidas e descarte adequado, mantendo o encanamento limpo e desimpedido.</p>
+                </div>
+              </div>
+
+              <div class="px-6 py-3.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between gap-2">
+                <span class="text-[11px] font-semibold text-slate-500 flex items-center gap-1">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  Sem quebrar nada
+                </span>
+                <a
+                  href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20a%20limpeza%20de%20CAIXA%20DE%20GORDURA%20em%20Contagem."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-sm transition-colors"
+                >
+                  💬 Chamar WhatsApp
+                </a>
+              </div>
+            </article>
+
+            <!-- 5. Hidrojateamento -->
+            <article class="rounded-2xl border border-slate-200 bg-white hover:border-slate-300 shadow-sm hover:shadow-md transition-all flex flex-col justify-between overflow-hidden">
+              <div class="p-6 space-y-4">
+                <div class="flex items-center justify-between gap-2">
+                  <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl">
+                    ⚡
+                  </div>
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold tracking-wide uppercase bg-slate-100 text-slate-700 border border-slate-200">
+                    Grandes Redes
+                  </span>
+                </div>
+
+                <div>
+                  <h3 class="text-lg font-bold text-slate-950 tracking-tight">Hidrojateamento de Alta Pressão</h3>
+                  <p class="text-xs text-slate-500 mt-1 font-medium">Limpeza profunda de redes e galerias com jato pressurizado de água.</p>
+                </div>
+
+                <div class="p-3 rounded-xl bg-red-50/70 border border-red-100 text-xs">
+                  <span class="font-bold text-red-800 block mb-0.5">Sintoma:</span>
+                  <p class="text-red-900 leading-relaxed">Obstruções severas em condomínios, comércios e redes de maior diâmetro.</p>
+                </div>
+
+                <div class="p-3 rounded-xl bg-emerald-50/70 border border-emerald-100 text-xs">
+                  <span class="font-bold text-emerald-800 block mb-0.5">Nossa Solução:</span>
+                  <p class="text-slate-700 leading-relaxed">Lavagem interna de alta pressão que desincrusta totalmente as paredes da tubulação.</p>
+                </div>
+              </div>
+
+              <div class="px-6 py-3.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between gap-2">
+                <span class="text-[11px] font-semibold text-slate-500 flex items-center gap-1">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  Sem quebrar nada
+                </span>
+                <a
+                  href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Preciso%20de%20hidrojateamento%20em%20Contagem."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-sm transition-colors"
+                >
+                  💬 Chamar WhatsApp
+                </a>
+              </div>
+            </article>
+
+            <!-- 6. Card CTA com Foto do Técnico -->
+            <div class="rounded-2xl border-2 border-emerald-500/80 bg-gradient-to-b from-slate-900 to-slate-950 text-white shadow-xl flex flex-col justify-between overflow-hidden">
+              <div class="relative h-48 w-full overflow-hidden bg-slate-800">
+                <img
+                  src="/images/tecnico_em_servico.jpg"
+                  alt="Técnico profissional em serviço de desentupimento em Contagem"
+                  loading="lazy"
+                  class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-300"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                <div class="absolute top-3 left-3">
+                  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-500 text-slate-950 shadow-md">
+                    ✨ Equipe no Local
+                  </span>
+                </div>
+              </div>
+
+              <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 class="text-xl font-black text-white tracking-tight">
+                    Precisa de Atendimento ou Agendamento?
+                  </h3>
+                  <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                    Converse diretamente conosco no WhatsApp. Você pode solicitar visita rápida ou marcar o dia e período mais conveniente para o seu endereço em Contagem.
+                  </p>
+
+                  <div class="mt-3 flex flex-wrap gap-2 text-[11px] text-slate-300">
+                    <span class="inline-flex items-center gap-1 bg-slate-800 px-2 py-1 rounded border border-slate-700">
+                      📅 Horário flexível
+                    </span>
+                    <span class="inline-flex items-center gap-1 bg-slate-800 px-2 py-1 rounded border border-slate-700">
+                      ✓ Sem quebrar pisos
+                    </span>
+                  </div>
+                </div>
+
+                <div class="pt-4">
+                  <a
+                    href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Estou%20em%20Contagem%20e%20gostaria%20de%20solicitar%20atendimento%20ou%20agendar%20um%20hor%C3%A1rio."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-full inline-flex items-center justify-center gap-2.5 px-4 py-3 rounded-xl text-sm font-extrabold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg transition-all"
+                  >
+                    <span>💬 Agendar ou Chamar no WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Faixa Inferior de Tubulações -->
+          <div class="mt-12 p-6 rounded-2xl bg-slate-900 text-white flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg">
+            <div class="space-y-1 text-center sm:text-left">
+              <h4 class="text-base sm:text-lg font-bold text-white">
+                <span class="text-amber-400">Atendimento em qualquer tipo de tubulação</span>
+              </h4>
+              <p class="text-xs sm:text-sm text-slate-300">
+                Colunas prediais, galerias pluviais, calhas e caixas de gordura residenciais e comerciais.
+              </p>
+            </div>
+
+            <a
+              href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20desentupimento%20em%20Contagem."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs sm:text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-500 transition-colors shadow-md whitespace-nowrap"
+            >
+              <span>💬 Falar no WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. COMO FUNCIONA O ATENDIMENTO -->
+      <section id="como-funciona" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl mx-auto text-center space-y-3 mb-12 sm:mb-16">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs sm:text-sm font-semibold tracking-wide text-amber-800 bg-amber-100/60 border border-amber-200">
+              <span>⏱️</span>
+              Processo Simples e Transparente
+            </span>
+
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-slate-950 tracking-tight">
+              Como Funciona o Atendimento em Contagem
+            </h2>
+
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+              Do primeiro contato à conclusão do serviço no seu imóvel: atendimento direto, flexibilidade de horários e transparência.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Passo 1 -->
+            <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="w-10 h-10 rounded-xl bg-slate-900 text-amber-400 font-black text-lg flex items-center justify-center shadow-md">
+                    01
+                  </span>
+                  <span class="text-[11px] font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full border border-slate-200">
+                    Resposta Rápida
+                  </span>
+                </div>
+                <h3 class="text-base sm:text-lg font-bold text-slate-950 mb-2 leading-snug">Contato pelo WhatsApp</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">Envie uma mensagem informando seu bairro em Contagem e o tipo de problema para combinarmos o atendimento.</p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-1.5 text-xs font-semibold text-emerald-600">
+                <span class="font-bold">✓</span> Etapa 1 de 4
+              </div>
+            </div>
+
+            <!-- Passo 2 -->
+            <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="w-10 h-10 rounded-xl bg-slate-900 text-amber-400 font-black text-lg flex items-center justify-center shadow-md">
+                    02
+                  </span>
+                  <span class="text-[11px] font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full border border-slate-200">
+                    Horário Flexível
+                  </span>
+                </div>
+                <h3 class="text-base sm:text-lg font-bold text-slate-950 mb-2 leading-snug">Atendimento Rápido ou Agendamento</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">Você escolhe: solicite atendimento ágil para o mesmo dia ou agende o melhor dia e período (manhã ou tarde).</p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-1.5 text-xs font-semibold text-emerald-600">
+                <span class="font-bold">✓</span> Etapa 2 de 4
+              </div>
+            </div>
+
+            <!-- Passo 3 -->
+            <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="w-10 h-10 rounded-xl bg-slate-900 text-amber-400 font-black text-lg flex items-center justify-center shadow-md">
+                    03
+                  </span>
+                  <span class="text-[11px] font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full border border-slate-200">
+                    Orçamento Transparente
+                  </span>
+                </div>
+                <h3 class="text-base sm:text-lg font-bold text-slate-950 mb-2 leading-snug">Avaliação no Local e Orçamento Claro</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">O técnico avalia o ponto exato da obstrução no imóvel e apresenta o orçamento transparente antes da execução.</p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-1.5 text-xs font-semibold text-emerald-600">
+                <span class="font-bold">✓</span> Etapa 3 de 4
+              </div>
+            </div>
+
+            <!-- Passo 4 -->
+            <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="w-10 h-10 rounded-xl bg-slate-900 text-amber-400 font-black text-lg flex items-center justify-center shadow-md">
+                    04
+                  </span>
+                  <span class="text-[11px] font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full border border-slate-200">
+                    Sem Quebrar Pisos
+                  </span>
+                </div>
+                <h3 class="text-base sm:text-lg font-bold text-slate-950 mb-2 leading-snug">Execução Limpa sem Quebra-Quebra</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">Realizamos o desentupimento com equipamentos modernos, testamos o fluxo de água e deixamos o ambiente limpo.</p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-1.5 text-xs font-semibold text-emerald-600">
+                <span class="font-bold">✓</span> Etapa 4 de 4
+              </div>
+            </div>
+          </div>
+
+          <!-- Banner de CTA -->
+          <div class="mt-12 p-6 sm:p-8 rounded-2xl bg-slate-900 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+            <div class="space-y-2 text-center md:text-left">
+              <h4 class="text-lg sm:text-xl font-bold text-white flex items-center justify-center md:justify-start gap-2">
+                <span>📅 Agende com facilidade ou solicite atendimento rápido</span>
+              </h4>
+              <p class="text-xs sm:text-sm text-slate-300 max-w-xl">
+                Nossa equipe atende residências, condomínios e comércios em todas as regiões de Contagem.
+              </p>
+            </div>
+
+            <a
+              href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Estou%20em%20Contagem%20e%20gostaria%20de%20solicitar%20atendimento%20ou%20agendar%20um%20hor%C3%A1rio."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-bold text-slate-950 bg-amber-400 hover:bg-amber-300 shadow-md transition-all flex-shrink-0"
+            >
+              <span>💬 Chamar no WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. COBERTURA EM TODOS OS BAIRROS DE CONTAGEM -->
+      <section id="cobertura" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl mx-auto text-center space-y-3 mb-12 sm:mb-14">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs sm:text-sm font-semibold tracking-wide text-emerald-800 bg-emerald-50 border border-emerald-200">
+              <span>📍</span>
+              Atendimento Local em Contagem
+            </span>
+
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-slate-950 tracking-tight">
+              Cobertura Completa em Todos os Bairros de Contagem e Região
+            </h2>
+
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+              Localização de fácil acesso a todas as regiões de Contagem, para atender seu chamado no menor tempo possível, sem cobrar taxa de deslocamento ou visita.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- 1. Eldorado -->
+            <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/90 hover:border-slate-300 transition-all flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-2 mb-3 pb-2 border-b border-slate-200">
+                  <span class="text-amber-600 font-bold">🧭</span>
+                  <h3 class="text-base font-bold text-slate-900">Região Eldorado</h3>
+                </div>
+                <ul class="space-y-1.5">
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Eldorado</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Novo Eldorado</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Parque São João</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Jardim Eldorado</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Glória</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Cidade Jardim Eldorado</li>
+                </ul>
+              </div>
+              <div class="mt-5 pt-3 border-t border-slate-200/70 text-[11px] font-semibold text-slate-500 flex items-center justify-between">
+                <span>Atendimento ágil</span>
+                <span class="text-emerald-700 font-bold">Sem taxa de deslocamento</span>
+              </div>
+            </div>
+
+            <!-- 2. Industrial & Cinco -->
+            <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/90 hover:border-slate-300 transition-all flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-2 mb-3 pb-2 border-b border-slate-200">
+                  <span class="text-amber-600 font-bold">🧭</span>
+                  <h3 class="text-base font-bold text-slate-900">Região Industrial & Cinco</h3>
+                </div>
+                <ul class="space-y-1.5">
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Industrial</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Distrito Industrial Cinco</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Cincão</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Inconfidentes</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Jardim Industrial</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Amazonas</li>
+                </ul>
+              </div>
+              <div class="mt-5 pt-3 border-t border-slate-200/70 text-[11px] font-semibold text-slate-500 flex items-center justify-between">
+                <span>Atendimento ágil</span>
+                <span class="text-emerald-700 font-bold">Sem taxa de deslocamento</span>
+              </div>
+            </div>
+
+            <!-- 3. Centro (Sede) -->
+            <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/90 hover:border-slate-300 transition-all flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-2 mb-3 pb-2 border-b border-slate-200">
+                  <span class="text-amber-600 font-bold">🧭</span>
+                  <h3 class="text-base font-bold text-slate-900">Região Sede (Centro)</h3>
+                </div>
+                <ul class="space-y-1.5">
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Centro de Contagem</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Fonte Grande</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Bernardo Monteiro</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Arcádia</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Alvorada</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Praia / N. Sra. do Carmo</li>
+                </ul>
+              </div>
+              <div class="mt-5 pt-3 border-t border-slate-200/70 text-[11px] font-semibold text-slate-500 flex items-center justify-between">
+                <span>Atendimento ágil</span>
+                <span class="text-emerald-700 font-bold">Sem taxa de deslocamento</span>
+              </div>
+            </div>
+
+            <!-- 4. Riacho -->
+            <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/90 hover:border-slate-300 transition-all flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-2 mb-3 pb-2 border-b border-slate-200">
+                  <span class="text-amber-600 font-bold">🧭</span>
+                  <h3 class="text-base font-bold text-slate-900">Região Riacho & Darcy Ribeiro</h3>
+                </div>
+                <ul class="space-y-1.5">
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Riacho das Pedras</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Jardim Riacho das Pedras</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Darcy Ribeiro</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Monte Castelo</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Vera Cruz</li>
+                </ul>
+              </div>
+              <div class="mt-5 pt-3 border-t border-slate-200/70 text-[11px] font-semibold text-slate-500 flex items-center justify-between">
+                <span>Atendimento ágil</span>
+                <span class="text-emerald-700 font-bold">Sem taxa de deslocamento</span>
+              </div>
+            </div>
+
+            <!-- 5. Ressaca & Cabral -->
+            <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/90 hover:border-slate-300 transition-all flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-2 mb-3 pb-2 border-b border-slate-200">
+                  <span class="text-amber-600 font-bold">🧭</span>
+                  <h3 class="text-base font-bold text-slate-900">Região Ressaca & Cabral</h3>
+                </div>
+                <ul class="space-y-1.5">
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Cabral</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Arpoador</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>São Joaquim</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Morada Nova</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Jardim Laguna</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Braúnas / Oitis</li>
+                </ul>
+              </div>
+              <div class="mt-5 pt-3 border-t border-slate-200/70 text-[11px] font-semibold text-slate-500 flex items-center justify-between">
+                <span>Atendimento ágil</span>
+                <span class="text-emerald-700 font-bold">Sem taxa de deslocamento</span>
+              </div>
+            </div>
+
+            <!-- 6. Nacional & Petrolândia -->
+            <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/90 hover:border-slate-300 transition-all flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-2 mb-3 pb-2 border-b border-slate-200">
+                  <span class="text-amber-600 font-bold">🧭</span>
+                  <h3 class="text-base font-bold text-slate-900">Região Nacional & Petrolândia</h3>
+                </div>
+                <ul class="space-y-1.5">
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Nacional</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Bom Jesus</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Petrolândia</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Nova Contagem</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Retiro / Chácaras Cotia</li>
+                  <li class="flex items-center gap-2 text-xs sm:text-sm text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>Vargem das Flores</li>
+                </ul>
+              </div>
+              <div class="mt-5 pt-3 border-t border-slate-200/70 text-[11px] font-semibold text-slate-500 flex items-center justify-between">
+                <span>Atendimento ágil</span>
+                <span class="text-emerald-700 font-bold">Sem taxa de deslocamento</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-10 text-center">
+            <p class="text-sm text-slate-600 mb-3">
+              Não encontrou seu bairro listado acima? Atendemos todas as regiões e proximidades de Contagem.
+            </p>
+            <a
+              href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Gostaria%20de%20saber%20se%20atendem%20no%20meu%20bairro%20em%20Contagem."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-md transition-colors"
+            >
+              <span>💬 Consultar ou Agendar pelo WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. PERGUNTAS FREQUENTES (FAQ COM DETAILS NATIVO DO HTML) -->
+      <section id="faq" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center space-y-3 mb-12">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs sm:text-sm font-semibold tracking-wide text-amber-800 bg-amber-100/70 border border-amber-200">
+              <span>❓</span>
+              Perguntas Frequentes
+            </span>
+
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-slate-950 tracking-tight">
+              Dúvidas Frequentes sobre Nossos Serviços em Contagem
+            </h2>
+
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+              Respostas transparentes sobre funcionamento, métodos e agendamento de horários.
+            </p>
+          </div>
+
+          <!-- Accordion com tag nativa HTML5 details -->
+          <div class="space-y-3.5">
+            <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden" open>
+              <summary class="w-full px-6 py-4.5 sm:py-5 text-left flex items-center justify-between gap-4 cursor-pointer hover:bg-slate-50/80 transition-colors list-none">
+                <span class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                  Posso agendar um horário para o atendimento no meu imóvel?
+                </span>
+                <span class="w-8 h-8 rounded-full bg-slate-100 group-open:bg-amber-100 group-open:text-amber-700 flex items-center justify-center flex-shrink-0 transition-transform duration-200 group-open:rotate-180">
+                  ▼
+                </span>
+              </summary>
+              <div class="px-6 pb-5 pt-1 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 bg-slate-50/40">
+                <p>Sim! Você pode tanto solicitar atendimento rápido para o mesmo dia quanto agendar previamente a data e o turno mais conveniente para você (manhã ou tarde), facilitando sua rotina em casa ou no trabalho.</p>
+              </div>
+            </details>
+
+            <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden" open>
+              <summary class="w-full px-6 py-4.5 sm:py-5 text-left flex items-center justify-between gap-4 cursor-pointer hover:bg-slate-50/80 transition-colors list-none">
+                <span class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                  Quanto tempo a equipe costuma demorar para chegar em Contagem?
+                </span>
+                <span class="w-8 h-8 rounded-full bg-slate-100 group-open:bg-amber-100 group-open:text-amber-700 flex items-center justify-center flex-shrink-0 transition-transform duration-200 group-open:rotate-180">
+                  ▼
+                </span>
+              </summary>
+              <div class="px-6 pb-5 pt-1 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 bg-slate-50/40">
+                <p>Possuímos localização de fácil acesso a todas as regiões de Contagem (próximas ao Eldorado, Industrial, Centro e Ressaca), garantindo agilidade no deslocamento até o seu endereço.</p>
+              </div>
+            </details>
+
+            <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+              <summary class="w-full px-6 py-4.5 sm:py-5 text-left flex items-center justify-between gap-4 cursor-pointer hover:bg-slate-50/80 transition-colors list-none">
+                <span class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                  Vocês quebram pisos, azulejos ou paredes para desentupir?
+                </span>
+                <span class="w-8 h-8 rounded-full bg-slate-100 group-open:bg-amber-100 group-open:text-amber-700 flex items-center justify-center flex-shrink-0 transition-transform duration-200 group-open:rotate-180">
+                  ▼
+                </span>
+              </summary>
+              <div class="px-6 pb-5 pt-1 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 bg-slate-50/40">
+                <p>Não! Trabalhamos com máquinas desentupidoras rotativas com cabos espirais flexíveis e hidrojateamento que atuam internamente pelos próprios canos e ralos, sem necessidade de reformas ou quebra-quebra.</p>
+              </div>
+            </details>
+
+            <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+              <summary class="w-full px-6 py-4.5 sm:py-5 text-left flex items-center justify-between gap-4 cursor-pointer hover:bg-slate-50/80 transition-colors list-none">
+                <span class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                  Como faço para solicitar atendimento ou tirar dúvidas?
+                </span>
+                <span class="w-8 h-8 rounded-full bg-slate-100 group-open:bg-amber-100 group-open:text-amber-700 flex items-center justify-center flex-shrink-0 transition-transform duration-200 group-open:rotate-180">
+                  ▼
+                </span>
+              </summary>
+              <div class="px-6 pb-5 pt-1 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 bg-slate-50/40">
+                <p>Basta clicar em qualquer botão de WhatsApp nesta página. Nosso canal direto no WhatsApp atende prontamente para entender seu caso e definir o horário ideal.</p>
+              </div>
+            </details>
+
+            <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+              <summary class="w-full px-6 py-4.5 sm:py-5 text-left flex items-center justify-between gap-4 cursor-pointer hover:bg-slate-50/80 transition-colors list-none">
+                <span class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                  Quais são as formas de pagamento aceitas?
+                </span>
+                <span class="w-8 h-8 rounded-full bg-slate-100 group-open:bg-amber-100 group-open:text-amber-700 flex items-center justify-center flex-shrink-0 transition-transform duration-200 group-open:rotate-180">
+                  ▼
+                </span>
+              </summary>
+              <div class="px-6 pb-5 pt-1 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 bg-slate-50/40">
+                <p>Aceitamos PIX, cartões de crédito (com possibilidade de parcelamento), cartões de débito e dinheiro. Para condomínios e empresas, oferecemos faturamento mediante cadastro.</p>
+              </div>
+            </details>
+          </div>
+
+          <!-- Caixa de Dúvidas Diretas -->
+          <div class="mt-12 p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-sm text-center space-y-4">
+            <div class="inline-flex p-3 rounded-full bg-emerald-50 text-emerald-600 text-2xl">
+              💬
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-slate-900">
+              Ainda ficou com alguma dúvida sobre o seu encanamento?
+            </h3>
+            <p class="text-sm text-slate-600 max-w-lg mx-auto">
+              Fale diretamente conosco no WhatsApp para esclarecer dúvidas sobre o seu caso ou agendar a data e o horário mais conveniente.
+            </p>
+
+            <div class="pt-2 flex justify-center">
+              <a
+                href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20desentupimento%20em%20Contagem."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm text-white bg-emerald-600 hover:bg-emerald-500 shadow-sm transition-colors"
+              >
+                <span>💬 Tirar Dúvida no WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 7. RODAPÉ / FOOTER -->
+    <footer class="bg-slate-950 text-slate-300 pt-16 pb-24 md:pb-16 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-slate-800">
+          <!-- Coluna 1: Marca & Resumo -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="flex items-center gap-2.5">
+              <div class="w-9 h-9 rounded-lg bg-amber-400 flex items-center justify-center text-slate-950 font-black text-lg">
+                💧
+              </div>
+              <div>
+                <span class="text-lg font-black text-white tracking-tight block leading-tight">
+                  DESENTUPIDORA <span class="text-amber-400">CONTAGEM</span>
+                </span>
+                <span class="text-[11px] text-slate-400 font-medium tracking-wide block">
+                  Desentupimento e Hidrojateamento
+                </span>
+              </div>
+            </div>
+
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-md">
+              Especialistas em desobstrução de esgoto, pias, ralos, vasos sanitários e caixas de gordura em Contagem e região. Atendimento ágil e opção de agendamento de horário com pontualidade.
+            </p>
+
+            <div class="pt-2 flex flex-wrap gap-2 text-xs">
+              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-slate-900 text-slate-300 border border-slate-800">
+                📅 Agendamento Flexível
+              </span>
+              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-slate-900 text-slate-300 border border-slate-800">
+                ✓ Sem Quebrar Pisos
+              </span>
+            </div>
+          </div>
+
+          <!-- Coluna 2: Navegação Rápida -->
+          <div class="lg:col-span-3 space-y-3">
+            <h4 class="text-sm font-bold text-white uppercase tracking-wider">
+              Navegação Rápida
+            </h4>
+            <ul class="space-y-2 text-xs sm:text-sm">
+              <li><a href="#servicos" class="hover:text-amber-400 transition-colors">Serviços de Desentupimento</a></li>
+              <li><a href="#como-funciona" class="hover:text-amber-400 transition-colors">Como Funciona o Atendimento</a></li>
+              <li><a href="#cobertura" class="hover:text-amber-400 transition-colors">Bairros Atendidos em Contagem</a></li>
+              <li><a href="#faq" class="hover:text-amber-400 transition-colors">Perguntas Frequentes (FAQ)</a></li>
+              <li>
+                <button type="button" id="open-privacy-btn" class="hover:text-amber-400 text-left transition-colors underline decoration-slate-600 underline-offset-4">
+                  Política de Privacidade (LGPD)
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Coluna 3: Canais de Atendimento -->
+          <div class="lg:col-span-4 space-y-3">
+            <h4 class="text-sm font-bold text-white uppercase tracking-wider">
+              Canais de Atendimento
+            </h4>
+
+            <address class="not-italic space-y-2.5 text-xs sm:text-sm text-slate-300">
+              <div class="flex items-start gap-2.5">
+                <span class="text-amber-400">📍</span>
+                <span><strong>Localização:</strong> Av. João César de Oliveira, 2800 - Eldorado, Contagem - MG</span>
+              </div>
+
+              <div class="flex items-start gap-2.5">
+                <span class="text-amber-400">📅</span>
+                <span><strong>Atendimento:</strong> Agendamento prévio ou atendimento ágil no mesmo dia</span>
+              </div>
+
+              <div class="flex items-start gap-2.5">
+                <span class="text-emerald-400">💬</span>
+                <div>
+                  <span class="block font-semibold">WhatsApp Direto:</span>
+                  <a
+                    href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Estou%20em%20Contagem%20e%20gostaria%20de%20solicitar%20atendimento%20ou%20agendar%20um%20hor%C3%A1rio."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-emerald-400 hover:text-emerald-300 font-bold underline"
+                  >
+                    (31) 98765-4321 (Clique para conversar)
+                  </a>
+                </div>
+              </div>
+            </address>
+          </div>
+        </div>
+
+        <!-- Copyright & Rodapé Inferior -->
+        <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+          <div class="text-center md:text-left space-y-1">
+            <p>© 2026 Desentupidora Contagem. Todos os direitos reservados.</p>
+            <p class="text-[11px] text-slate-600">Atendimento técnico especializado em conformidade com as normas sanitárias e ambientais.</p>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <button type="button" id="open-privacy-btn-2" class="text-slate-400 hover:text-slate-200 transition-colors">
+              Privacidade & LGPD
+            </button>
+            <span>•</span>
+            <a href="#inicio" class="text-slate-400 hover:text-slate-200 transition-colors">
+              Voltar ao Topo ↑
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL POLÍTICA DE PRIVACIDADE / LGPD -->
+    <div id="privacy-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/75 backdrop-blur-sm">
+      <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8 shadow-2xl border border-slate-200 relative text-slate-900">
+        <button
+          type="button"
+          id="close-privacy-btn"
+          class="absolute top-4 right-4 p-2 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors text-lg"
+          aria-label="Fechar"
+        >
+          ✕
+        </button>
+
+        <div class="flex items-center gap-2 text-emerald-700 font-bold mb-3">
+          <span class="text-xs uppercase tracking-wider">🛡️ Transparência & LGPD</span>
+        </div>
+
+        <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-4">
+          Política de Privacidade e Proteção de Dados (LGPD)
+        </h3>
+
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>
+            A <strong>Desentupidora Contagem</strong> valoriza a sua privacidade e segurança. Esta política esclarece como tratamos as informações no âmbito dos atendimentos em Contagem e região, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - LGPD).
+          </p>
+
+          <h4 class="font-bold text-slate-800 text-base mt-4">1. Coleta de Informações</h4>
+          <p>
+            Coletamos apenas as informações estritamente necessárias para a prestação do serviço de desentupimento ou agendamento solicitado pelo cliente, tais como: nome, WhatsApp de contato, bairro e endereço de atendimento em Contagem. Esses dados são fornecidos voluntariamente quando você clica em nossos botões de contato.
+          </p>
+
+          <h4 class="font-bold text-slate-800 text-base mt-4">2. Finalidade do Tratamento</h4>
+          <p>As informações são utilizadas exclusivamente para:</p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>Deslocamento da equipe técnica até o endereço solicitado;</li>
+            <li>Agendamento do dia e horário escolhidos para o atendimento;</li>
+            <li>Elaboração do diagnóstico e orçamento prévio transparente;</li>
+            <li>Comunicação sobre o andamento e conclusão do atendimento.</li>
+          </ul>
+
+          <h4 class="font-bold text-slate-800 text-base mt-4">3. Não Compartilhamento</h4>
+          <p>
+            Não comercializamos nem compartilhamos seus dados pessoais com terceiros para fins de marketing ou publicidade. As informações permanecem em sigilo operacional.
+          </p>
+
+          <h4 class="font-bold text-slate-800 text-base mt-4">4. Direitos do Titular</h4>
+          <p>
+            Você tem o direito de solicitar a confirmação, correção ou exclusão de seus dados de nossa base de contatos a qualquer momento, bastando enviar uma solicitação através do nosso WhatsApp oficial.
+          </p>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-slate-200 flex justify-end">
+          <button
+            type="button"
+            id="close-privacy-btn-2"
+            class="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm transition-colors"
+          >
+            Entendido e Concordo
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTÕES FLUTUANTES WHATSAPP -->
+    <!-- Desktop Float Button (Bottom Right) -->
+    <div class="fixed bottom-6 right-6 z-40 hidden sm:flex flex-col items-end gap-2">
+      <div id="float-tooltip" class="bg-slate-900 text-white text-xs font-medium py-2 px-3.5 rounded-xl shadow-2xl border border-slate-700 flex items-center gap-2 max-w-xs animate-bounce">
+        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+        <span>Atendimento ou agendamento em Contagem!</span>
+        <button id="close-tooltip-btn" type="button" class="text-slate-400 hover:text-white p-0.5 ml-1" aria-label="Fechar">✕</button>
+      </div>
+
+      <a
+        href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Estou%20em%20Contagem%20e%20gostaria%20de%20solicitar%20atendimento%20ou%20agendar%20um%20hor%C3%A1rio."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chamar no WhatsApp"
+        class="relative group w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200 text-2xl"
+      >
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-30"></span>
+        <span class="relative z-10">💬</span>
+      </a>
+    </div>
+
+    <!-- Mobile Sticky Bottom Bar -->
+    <div class="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-slate-950/95 backdrop-blur-md border-t border-slate-800 p-2.5 px-3 flex items-center shadow-2xl">
+      <a
+        href="https://wa.me/5531987654321?text=Ol%C3%A1!%20Estou%20em%20Contagem%20e%20gostaria%20de%20solicitar%20atendimento%20ou%20agendar%20um%20hor%C3%A1rio."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-full flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-emerald-600 text-white font-extrabold text-sm uppercase tracking-wide shadow-lg active:bg-emerald-500 transition-colors"
+      >
+        <span>💬 Chamar no WhatsApp (Atendimento ou Agendamento)</span>
+      </a>
+    </div>
+
+    <!-- Script leve Vanilla JS para interatividades da página -->
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
