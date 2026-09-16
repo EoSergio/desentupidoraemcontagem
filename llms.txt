@@ -1,0 +1,23 @@
+# Desentupidora Contagem 24h - WaaS Project
+
+> Este arquivo descreve a estrutura, o modelo de negócios e as diretrizes do site institucional focado em SEO local para o nicho de prestação de serviços de urgência (Modelo Rank and Rent / Website as a Service).
+
+## Sobre o Projeto
+- **Nicho:** Desentupidora 24 Horas e Serviços de Hidráulica de Urgência.
+- **Localidade Alvo:** Contagem (Minas Gerais) e Região Metropolitana.
+- **Modelo de Negócio:** WaaS (Website como Serviço) / Rank and Rent. O site é mantido por um provedor digital e alugado para um prestador local mediante taxa mensal recorrente em troca de leads qualificados.
+- **Objetivo de Conversão:** Cliques imediatos em botões de WhatsApp (com mensagens pré-formatadas) e ligações telefônicas diretas para o plantão de emergência.
+
+## Arquitetura do Site (Landing Page / One Page)
+- **Header:** Logotipo otimizado com palavra-chave, menu de navegação por âncoras e botão de CTA rápido para WhatsApp.
+- **Hero Section (Acima da Dobra):** H1 focado em SEO local ("Desentupidora 24 Horas em Contagem e Região"), subtítulo de urgência, duplo CTA (WhatsApp e Telefone) e diferenciais rápidos.
+- **Serviços Principais:** Cards diretos detalhando Desentupimento de Esgoto, Pias, Ralos, Vasos Sanitários, Limpeza de Caixa de Gordura e Hidrojateamento.
+- **Seção de Autoridade ("Por que nos escolher"):** Passo a passo visual de atendimento e diferenciais técnicos (frota própria e equipamentos modernos).
+- **Cobertura Local (SEO Georreferenciado):** Listagem estratégica dos principais bairros de Contagem (Eldorado, Industrial, Centro, Riacho, Cabral, etc.) para ranqueamento orgânico.
+- **FAQ (Perguntas Frequentes):** Dúvidas comuns com foco em quebrar objeções (tempo de deslocamento, taxa de visita gratuita e garantia).
+- **Rodapé e Recursos:** Informações legais, links institucionais e botão flutuante de WhatsApp fixo no mobile.
+
+## Especificações Técnicas e Rastreamento
+- **Plataforma base:** HTML5 semântico limpo e CSS3 responsivo (compatível com integração futura via WordPress).
+- **Otimização de SEO On-Page:** Tags H1, H2, H3 estruturadas, meta descriptions direcionadas e arquivo sitemap.xml configurado para indexação rápida.
+- **Métricas e Conversão:** Rastreamento de cliques em links de contato direto para mensuração de leads gerados ao parceiro local.
