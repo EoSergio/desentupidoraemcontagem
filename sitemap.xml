@@ -1,30 +1,42 @@
-https://eosergio.github.io/desentupidoraemcontagem/
-2026-09-08
-weekly
-1.0
-    
-    
-    
-    
-https://eosergio.github.io/desentupidoraemcontagem/#servicos
-2026-09-08
-monthly
-0.8
-    
-    
-https://eosergio.github.io/desentupidoraemcontagem/#sobre
-2026-09-08
-monthly
-0.5
-    
-    
-https://eosergio.github.io/desentupidoraemcontagem/#regioes
-2026-09-08
-monthly
-0.8
-    
-    
-https://eosergio.github.io/desentupidoraemcontagem/#faq
-2026-09-08
-monthly
-0.6
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Página Principal -->
+    <url>
+        <loc>https://www.seudominio.com.br/</loc>
+        <lastmod>2026-11-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Páginas Internas de Serviços -->
+    <url>
+        <loc>https://www.seudominio.com.br/servicos/esgoto.html</loc>
+        <lastmod>2026-11-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.seudominio.com.br/servicos/pias.html</loc>
+        <lastmod>2026-11-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.seudominio.com.br/servicos/ralos.html</loc>
+        <lastmod>2026-11-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.seudominio.com.br/servicos/vasos.html</loc>
+        <lastmod>2026-11-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.seudominio.com.br/servicos/caixa-gordura.html</loc>
+        <lastmod>2026-11-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
