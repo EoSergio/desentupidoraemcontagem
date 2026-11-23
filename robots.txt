@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Caminho para o sitemap do site para facilitar a indexação pelos buscadores
-Sitemap: https://eosergio.github.io/desentupidoraemcontagem/
+Sitemap: https://eosergio.github.io/desentupidoraemcontagem/sitemap.xml
